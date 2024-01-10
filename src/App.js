@@ -18,7 +18,11 @@ const App = () => {
       <Services />
       <Work />
       <Contact />
+<<<<<<< HEAD
       <div className='h-[4000px]'></div>
+=======
+      {/* <div className='h-[4000px]'></div> */}
+>>>>>>> 76419053caf109301743e2574879ba58ad0986cd
     </div>
   );
 };
