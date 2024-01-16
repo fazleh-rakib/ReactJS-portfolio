@@ -9,7 +9,7 @@ const Header = () => {
     {/* logo */}
     <a href="">
       {/* <img src={logo} alt="" /> */}
-      <h2 className=' text-gradient text-3xl'>Fazleh Rakib</h2>
+      <h2 className=' text-gradient text-3xl'>Fazleh <br /><span className='text-white'>Rakib</span></h2>
     </a>
     <button className='btn btn-sm'> Work With Me</button>
   </div>
