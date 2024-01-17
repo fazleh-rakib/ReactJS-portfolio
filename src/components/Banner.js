@@ -1,7 +1,7 @@
 import React from "react";
 //images
-import image from "../assets/avatar.svg";
 import imaage2 from "../assets/picc.jpg";
+import image from "../assets/picc-removebg-preview (1).png";
 //icons
 import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
 // type animition
@@ -57,9 +57,15 @@ const Banner = () => {
               whileInView={"show"}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-              laudantium est facilis sapiente dignissimos aliquam illum
-              laboriosam velit molestias eveniet!
+              An independent and self-motivated graduate with very enthusiasm to
+              do something. Assisted individuals in developing personal
+              websites, leveraging my skills in{" "}
+              <span className="text-yellow-500 font-semibold">JS</span>,{" "}
+              <span className="text-yellow-500 font-semibold"> HTML</span> and{" "}
+              <span className="text-yellow-500 font-semibold">CSS</span> . <br /> Applied best
+              practice for <span className="text-yellow-500 font-semibold"> UI/UX</span>{" "}
+              design and user-friendly websites also maintenance and support to
+              address any issues or update requirement
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -94,13 +100,13 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="w-[350px] h-[300px] "
+            className="w-[300px] h-[300px] hidden lg:block "
           >
             {/* {image} */}
             <img
-              src={imaage2}
+              src={image}
               alt=""
-              className="shadow ml-4 rounded-full  h-auto align-middle border-none hidden lg:flex flex-1 max-w-[320px]"
+              className="shadow ml-4 rounded-full  align-middle border-none hidden lg:flex flex-1 w-[320px] h-[320px]"
             />
           </motion.div>
         </div>
