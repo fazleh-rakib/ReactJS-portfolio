@@ -13,23 +13,34 @@ const About = () => {
     threshold: 0.5,
   });
   return (
-    <section   className="min-h-[85vh] lg:min-h-[78vh] flex items-center" id="about" ref={ref}>
+    <section
+      className="section flex items-center"
+      id="about"
+      ref={ref}
+    >
       <div className="container mx-auto">
         <div className="grid grid-col-1 lg:grid-cols-2 items-center gap-x-20 gap-y-0 h-screen">
           {/* image */}
-          <motion.div 
-          variants={fadeIn('right', 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          className="flex-1 bg-about bg-contain bg-no-repeat h-[550px] w-full  mix-blend-lighten bg-top ">
-          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            className="flex-1 bg-about bg-contain bg-no-repeat h-[550px] w-full  mix-blend-lighten bg-top "
+          ></motion.div>
           {/* text */}
           <motion.div
-           variants={fadeIn('left', 0.5)}
-           initial="hidden"
-           whileInView={"show"}
+            variants={fadeIn("left", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
           >
-            <h2 className="h2 text-accent font-bold">About me.</h2>
+            <motion.h2
+              variants={fadeIn("down", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              className="h2 text-accent font-bold"
+            >
+              About me.
+            </motion.h2>
             <h3 className="h3 mb-4">
               I'm a Freelance Front-End Developer with over 4 years of
               experience
@@ -69,13 +80,18 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-8 items-center">
+            <motion.div
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              className="flex gap-x-8 items-center"
+            >
               <button className="btn btn-lg">Contact Me</button>
               <a href="" className="text-gradient">
                 {" "}
                 My Portfolio
               </a>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
